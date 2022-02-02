@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Test Suite]">
+  <test thread-count="5" name="FirefoxBasicInfoTestScript(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="careers.FirefoxCreateAccountTestScript">
+        <methods>
+          <include name="verifyBasicInfoScreen"/>
+          <include name="afterMethod"/>
+          <include name="initilaizeDriver"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- careers.FirefoxCreateAccountTestScript -->
+    </classes>
+  </test> <!-- FirefoxBasicInfoTestScript(failed) -->
+  <test thread-count="5" name="ChromeBasicInfoTestScript(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="careers.ChromeCreateAccountTestScript">
+        <methods>
+          <include name="verifyBasicInfoScreen"/>
+          <include name="afterMethod"/>
+          <include name="initilaizeDriver"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- careers.ChromeCreateAccountTestScript -->
+    </classes>
+  </test> <!-- ChromeBasicInfoTestScript(failed) -->
+</suite> <!-- Failed suite [Test Suite] -->

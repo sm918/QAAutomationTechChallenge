@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test Suite">
+    <test verbose="2" preserve-order="true" name="FirefoxCreateAccountTestScript">
+        <parameter name="browser"  value="firefox"></parameter>
+        <classes>
+            <class name="careers.FirefoxCreateAccountTestScript">
+                <methods>
+                    <include name="verifyBasicInfoScreen"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="ChromeCreateAccountTestScript">
+        <parameter name="browser"  value="chrome"></parameter>
+        <classes>
+            <class name="careers.ChromeCreateAccountTestScript">
+                <methods>
+                    <include name="verifyBasicInfoScreen"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+<!--    <test verbose="2" preserve-order="true" name="SafariCreateAccountTestScript">
+        <parameter name="browser"  value="safari"></parameter>
+        <classes>
+            <class name="careers.SafariCreateAccountTestScript">
+                <methods>
+                    <include name="verifyBasicInfoScreen"/>
+                </methods>
+            </class>
+        </classes>
+    </test>-->
+</suite>
